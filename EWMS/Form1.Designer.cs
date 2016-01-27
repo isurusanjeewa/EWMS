@@ -61,16 +61,16 @@
             this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column10 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -114,13 +114,14 @@
             // newListToolStripMenuItem
             // 
             this.newListToolStripMenuItem.Name = "newListToolStripMenuItem";
-            this.newListToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.newListToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.newListToolStripMenuItem.Text = "New List";
+            this.newListToolStripMenuItem.Click += new System.EventHandler(this.newListToolStripMenuItem_Click);
             // 
             // newNameToolStripMenuItem
             // 
             this.newNameToolStripMenuItem.Name = "newNameToolStripMenuItem";
-            this.newNameToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.newNameToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.newNameToolStripMenuItem.Text = "New Name";
             // 
             // openToolStripMenuItem
@@ -304,7 +305,7 @@
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1018, 60);
+            this.toolStrip1.Size = new System.Drawing.Size(1018, 29);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -325,17 +326,59 @@
             this.Column9,
             this.Column10});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 84);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 53);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1018, 245);
+            this.dataGridView1.Size = new System.Drawing.Size(1018, 276);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // Column10
+            // Column1
             // 
-            this.Column10.FillWeight = 53.57623F;
-            this.Column10.HeaderText = "Benefits from emmigration";
-            this.Column10.Name = "Column10";
+            this.Column1.FillWeight = 223.0111F;
+            this.Column1.HeaderText = "Name of the Emmigrated Women";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.FillWeight = 96.01867F;
+            this.Column2.HeaderText = "Address";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.FillWeight = 96.01867F;
+            this.Column3.HeaderText = "NIC No";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.FillWeight = 96.01867F;
+            this.Column4.HeaderText = "Passport No";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.FillWeight = 96.01867F;
+            this.Column5.HeaderText = "Marital Status";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.FillWeight = 96.01867F;
+            this.Column6.HeaderText = "Name of Husband";
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            this.Column7.FillWeight = 96.01867F;
+            this.Column7.HeaderText = "Names of Children";
+            this.Column7.Name = "Column7";
+            // 
+            // Column8
+            // 
+            this.Column8.FillWeight = 96.01867F;
+            this.Column8.HeaderText = "Name of Protector of Children";
+            this.Column8.Name = "Column8";
             // 
             // Column9
             // 
@@ -345,63 +388,21 @@
             this.Column9.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Column9.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
-            // Column8
+            // Column10
             // 
-            this.Column8.FillWeight = 96.01867F;
-            this.Column8.HeaderText = "Name of Protector of Children";
-            this.Column8.Name = "Column8";
-            // 
-            // Column7
-            // 
-            this.Column7.FillWeight = 96.01867F;
-            this.Column7.HeaderText = "Names of Children";
-            this.Column7.Name = "Column7";
-            // 
-            // Column6
-            // 
-            this.Column6.FillWeight = 96.01867F;
-            this.Column6.HeaderText = "Name of Husband";
-            this.Column6.Name = "Column6";
-            // 
-            // Column5
-            // 
-            this.Column5.FillWeight = 96.01867F;
-            this.Column5.HeaderText = "Marital Status";
-            this.Column5.Name = "Column5";
-            // 
-            // Column4
-            // 
-            this.Column4.FillWeight = 96.01867F;
-            this.Column4.HeaderText = "Passport No";
-            this.Column4.Name = "Column4";
-            // 
-            // Column3
-            // 
-            this.Column3.FillWeight = 96.01867F;
-            this.Column3.HeaderText = "NIC No";
-            this.Column3.Name = "Column3";
-            // 
-            // Column2
-            // 
-            this.Column2.FillWeight = 96.01867F;
-            this.Column2.HeaderText = "Address";
-            this.Column2.Name = "Column2";
-            // 
-            // Column1
-            // 
-            this.Column1.FillWeight = 223.0111F;
-            this.Column1.HeaderText = "Name of the Emmigrated Women";
-            this.Column1.Name = "Column1";
+            this.Column10.FillWeight = 53.57623F;
+            this.Column10.HeaderText = "Benefits from emmigration";
+            this.Column10.Name = "Column10";
             // 
             // toolStripButton1
             // 
             this.toolStripButton1.AutoSize = false;
-            this.toolStripButton1.BackgroundImage = global::EWMS.Properties.Resources.user_female_add_new_create_512;
             this.toolStripButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = global::EWMS.Properties.Resources.user_female_add_new_create_512;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(50, 50);
+            this.toolStripButton1.Size = new System.Drawing.Size(20, 20);
             this.toolStripButton1.Text = "toolStripButton1";
             // 
             // Form1
